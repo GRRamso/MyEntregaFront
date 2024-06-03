@@ -1,0 +1,57 @@
+	body{
+		/*background: red;	#000000 fondo en color negro - C:\Users\Yo\OneDrive\Escritorio\Entrega TP1\img\foto.jpg - "img/foto.jpg"*/
+		color: yellow; 	/#fff*letras en color blanco*/
+	}
+  	
+	.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+  	}
+
+
+	main
+		  padding: 20px;
+		  color: green;
+		}
+	/*Extra small devices (phones, 600px and down)*/
+	@media only screen and (max-width: 600px){
+		.example{background: red;}
+	}
+
+	/*Small devices (portrait tablets and large phones, 600px and up)*/
+	@media only screen and (min-width: 600px){
+		.example{background: green;}
+	}
+
+	/*Medium devices (landscapes tablets, 768px and up)*/
+	@media only screen and (min-width: 768px){
+		.example{background: blue;}
+	}
+
+	/*Large devices (laptops/desktops, 992px and up)*/
+	@media only screen and (min-width: 992px){
+		.example{background: orange;}
+	}
+
+	/*Extra large devices (large laptops and desktops, 1200px and up)*/
+	@media only screen and (max-min: 1200px){
+		.example{background: pink;}
+	}
+
+		.myDiv{
+		  width: 400px;
+		  height: 250px;
+		  background-color: lightpink; 		   
+		}
+
+		.myDiv:hover{
+		  transform: rotate(5deg) scale2(2,2) translates(200px, 40px);
+
+
+
+	hr{
+    	border: 3px solid #9f3647;
+  	width: 80%;
+    	margin: 0 auto;
+    	margin-top: 40px;
+	}
