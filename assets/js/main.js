@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo-2.svg";
+      logo.src = "assets/images/logo/logo.png"; //logo-2.svg
     } else {
-      logo.src = "assets/images/logo/logo.svg";
+      logo.src = "assets/images/logo/logo.png"; //logo.svg
     }
 
     // show or hide the back-top-top button
@@ -150,7 +150,17 @@
 
   //Provincias & Localidades Select  
   const urlApi = "https://apis.datos.gob.ar/georef/api";			// const urlApi = "https://localhost:5001";  	const urlApi = "C:\Users\Yo\OneDrive\Escritorio\play-bootstrap\ProvAndLocal.sql";  
-  const urlProvincias = `${urlApi}/provincias`;						//	const urlProvincias = `${urlApi}/api`;
+
+// Opciones para las peticiones fetch a la API
+const opt = {
+    method: 'GET', // Método de la petición (GET)
+    headers: {
+        accept: 'application/json', // Tipo de respuesta esperada (JSON)
+        Authorization: '' // Bearer apikey    
+    }
+};	
+	
+ const urlProvincias = `${urlApi}/provincias`, opt;						//	const urlProvincias = `${urlApi}/api`;
  // const urlLocalidades = `${urlApi}/provincias/id/localidades`; 	 const urlLocalidades = `${urlApi}/api/characters`;
 	
   window.addEventListener('DOMContentLoaded', function (){
